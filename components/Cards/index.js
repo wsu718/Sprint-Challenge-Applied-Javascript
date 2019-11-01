@@ -34,7 +34,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         Object.values(response.data.articles).forEach((value) => {
             value.forEach(item => {
                 const newArticle = createArticle(item);
-                console.log(newArticle);
+                // console.log(newArticle);
                 articleAnchor.appendChild(newArticle);
             })
         }
